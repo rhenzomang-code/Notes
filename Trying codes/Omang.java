@@ -1,24 +1,20 @@
-import java.util.Scanner;
+import java.util.Random;
 
 public class Omang {
-  public static void main(String[] args) {
+    public static void main(String[] args) {
+        //its not like scanner that has System.in inside of the (), there's nothing inside
+        //because it is random so it doesn't need System.in I think
+        Random random = new Random();
 
-    // SHOPPING CART PROGRAM
+        //I think this one doesn't need an assigned value because it is random afterall
+        double number;
+        
+        // because inside the () is the number ranging from whatever you want
+        //though still the same of scanner.nextInt();  function
+        //this one will just generate from numbers 0 and 1 but will high numbers of decimal portions only
+        number = random.nextDouble();   
 
-    Scanner scanner = new Scanner(System.in);
-
-    String item; 
-    double price;
-    int quantity;
-    char curreny = '$'
-    double total;
-
-    System.out.print("What item would you like to buy? ");
-    item = scanner.nextLine();
-
-    System.out.print(item);
-     
-    scanner.close();
-
-  }
+        //simply just print out the number it'll get
+        System.out.print(number);
+    }
 }

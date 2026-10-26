@@ -1,0 +1,106 @@
+`                                                    HOW TO ACCESS CSS CODE
+
+3 TYPES of CSS Application
+    Inline, Internal, External
+    
+    1. Inline     - inside of the line of your code                   ex. <header style="background-color: aqua;"></header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aqua;">
+    <h1 style="color: crimson;">Website</h1>
+    <p style="color: brown;">paragraph 1</p>
+    <p style="color: darkgreen;">paragraph 2</p>
+    <p style="color: darkmagenta;">paragraph 3</p>
+    <p style="color: gold;">paragraph 4</p>
+</body>
+</html>    
+    
+
+    2. Internal   - excecuted at the header                           ex. <style> </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: blue;
+            text-align: center;
+            text-shadow: 2px 1px;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+
+    
+    3. External   - make another file called .css to access css       ex. style.css
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">     href="(whatever you name your .css together with .css)"
+</head>
+<body>
+    
+</body>
+</html>
+    
+
+ 
+<p id="p1">Hello<p>                                  <!-- id means for one specific line of code -->
+<button class="btn">Cancel</button>                  <!-- class means to control multiple lines of codes and assign something to them-->
+<button class="btn">Submit</button>
+<p class="highlight">Important notice here.</p>      <!-- class for multiple line of codes -->
+
+
+
+    # to access id
+#p1 {
+    color: white;
+}  
+
+    . to access class
+.btn {
+  
+}
+
+.highlight {
+  
+}
+
+
+
+<p>Welcome back, <span class="username">Rhenz</span>!</p>              span is an inline css code like extended use for what you do.
+.                                                                      Still in the same line of the code, but the word "Rhenz" 
+.                                                                      has now meaning and now can be edited using css
+
+
+
+color - can be accesed either name of it, rgb value, hexidecimal values, or hsl values.Also, it varies, but colo means just the overall color.
+font-size measurement can be pixels(px) or em(standard)
+font- family - chooses which specific font style or family to use (Arial, Times New Roman, or cursive)
+font-size - how big or small the text appears on the screen (px, %, em)
+font-weight - thick or heavy the lines of the letters are (normal, bold)  ex. 400   700
+font-style - Changes angle or posture of the text (normal, italic)
+
+
+border-style - create's box (solid, dashed, dotted, double, groove, ridge, inset, outset)
+border-width - border thickness (px)
+border-color - simply the color of the overall border (name, rbg, hsl, hexidecimal)
+boder-radius - rounds the corner of the border, higher number in pixels, more rounded, up to 20px
+border: 3px solid purple; - shorthand syntax
+bottom-top - simply makes a border at the top part
+border-botoom - simply makes a border at the bottom part
+border-right - simply makes a border at the right side
+border-left - simply makes a border at the left side

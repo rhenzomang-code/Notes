@@ -1,0 +1,34 @@
+<!--  -->   -  press ctrl + / to generate this, its for taking notes, it won't do anything, just notes really.
+
+
+
+press shift + 1 then pressenter to generate this 
+<!DOCTYPE html>
+<html lang="en">                                                                <!-- means the language it's gonna use is english -->
+<head>                                                                          <!-- head tag -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!--  -->
+    <title>Document</title>                                                     <!-- name that would appear when you open it in a new tab -->
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+element - header, h1,h2, p, title, etc...
+id - specific for one element, like the word itself, an i'd
+class - assigned to multiple line of codes
+span - span can be used inline, its like extended use for what you do, still in the same line as the paragraph
+section - word itself, groups elements like a section in a class
+div - divides into each section
+article - will work independently even if you moved them to other
+strong - turns into bold (strong importance)
+em - turns into italic (emphasized text)
+nav - navigation/buttons
+h1 - h6 varies is size
+header - top as its word says it but at the top-left corner when you first make one
+footer - as its word says 
+nav - as its word says

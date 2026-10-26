@@ -1,0 +1,303 @@
+        //Primitive Data
+        int number = 10;            // int = whole number
+        double price = 9.99;        // double = decimal numbers
+        char grade = 'A';           // char = single character 
+        boolean isJavaFun = true;   // boolean = true or false
+
+
+        //Non-Primitive Data
+        String greeting = "Hello";  // String = Text (sequence of characters)
+        int[] numbers = {1, 2, 3, 4, 5};
+
+
+        nextLine()                  // reads complete line of text
+        next()                      // reads one word
+        nextInt()                   // reads integer
+        nextDouble()                // reads decimal number
+        nextFloat()                 // reads float
+        nextBoolean()               // reads true or false
+
+
+
+
+        //can either print a text or can be typed in by the user
+        //always start the System with capital or it'll turn into an error
+        System.out.println("Hello World")       //print
+        System.out.print("Enter Name: ")   //user interaction
+
+        //You only write int when creating a variable for the first time; after that, just use its name like age = 23; to change its value. 
+        // It's also the same for double, char, and boolean
+        int age;  - Creates the variable box named age.
+        age = 23; - Puts a value into the existing age box.
+        int age = 23; - Tries to create a second box with the exact same name, which confuses Java!
+        
+        int age;                             //no assigned value because you can make this into a user's interface System.out.print("Enter your age: ");
+        System.out.print("Enter age: ");     //user interaction that will print Enter age:  and can be interacted by the user
+       
+        int age = 23;                        //assigned value    
+        System.out.print(age);               //will just print the given value which is 23
+
+        double price;                       //no assigned value because you can make this into a user's interface System.out.print("Enter price: ");
+        System.out.print("Enter price: ");  //user interaction that will print Enter price:  and can be interacted by the user
+
+        double price = 10.99;               //assigned value    
+        System.out.print(price)             //will just print the given value which is 10.99++++
+       
+
+
+        
+
+
+import java.util.Random;    //import in order to use the built in system
+
+public class Omang {
+    public static void main(String[] args) {
+        //its not like scanner that has System.in inside of the (), there's nothing inside
+        //because it is random so it doesn't need System.in I think
+        Random random = new Random();
+
+        //I think this one doesn't need an assigned value because it is random afterall
+        int number;
+        
+        // because inside the () is the number ranging from whatever you want
+        //though still the same of scanner.nextInt();  function
+        //this code will just simply pick from numbers 1-6, though 6 is optimal
+        //first one is inclusive and the second is exclusive
+        //exclusive means it can go up to that number, but not including it
+        //ex. my friend say that I wanna go but I also don't wanna go.
+        number = random.nextInt(1, 6);   
+
+        //simply just print out the number it'll get
+        System.out.print(number);
+    }
+}
+
+import java.util.Random;
+
+public class Omang {
+    public static void main(String[] args) {
+        //its not like scanner that has System.in inside of the (), there's nothing inside
+        //because it is random so it doesn't need System.in I think
+        Random random = new Random();
+
+        //I think this one doesn't need an assigned value because it is random afterall
+        double number;
+        
+        // because inside the () is the number ranging from whatever you want
+        //though still the same of scanner.nextInt();  function
+        //this one will just generate from numbers 0 and 1 but will high numbers of decimal portions only
+        number = random.nextDouble();   
+
+        //simply just print out the number it'll get
+        System.out.print(number);
+    }
+}
+        
+
+
+
+
+
+
+ 
+        boolean variable only hold one of two values: true or false. Naming it isStudent reads like a question or a statement: 
+        "Is this person a student?" $\rightarrow$ true or false.Naming it just Student implies an actual object or person, or even a specific category, rather than a simple yes/no flag.Phrasing boolean variables with prefixes like is, has, can, or should (e.g., isStudent, hasPassed, canLogIn) 
+        makes your code read almost like natural English when you use it inside if statements later:
+
+
+        
+        studentId = 20251342;
+        gpa = 1.25;
+
+        String name; 
+        int studentId; 
+        double gpa;
+
+
+
+        int name = " + ;
+
+        double age = " + ;
+
+
+        String name = "Rhenz";
+        name.
+
+        int a = 10; 
+
+        if (a > 5) {
+            return 0;
+        
+        } else ( a < 5) {
+            return 0;
+
+        }
+
+        for (int i = 0; i < 5; i++) {
+
+        }
+
+import java.util.Scanner;
+
+public class Omang {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println ("Enter Name: ");
+        String name = scanner.nextLine();
+
+        System.out.print ("Enter Age: ");
+        int age = scanner.nextInt();
+
+        System.out.println(" Your name is " + name );
+        System.out.print(" Your age is " + age );
+    }
+}
+
+
+import java.util.Scanner;
+
+public class Omang {
+    public static void main(String[] args ) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter name:");
+        String name = scanner.nextLine();
+
+        System.out.println("Enter age:");
+        int age = scanner.nextInt();
+        
+        System.out.println("Enter Department:");
+        String department = scanner.next();
+    
+        
+        System.out.println("My name is " + name);
+        System.out.println("I am "  + age + " years old");
+        System.out.print("I am from " + department + " department");
+    }
+
+
+
+
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the first number: ");
+        double a = scanner.nextDouble();
+
+        System.out.print("Enter an operator (+, -, *, /): ");
+        String operator = scanner.next();
+
+        System.out.print("Enter the second number: ");
+        double b = scanner.nextDouble();
+
+        if (operator.equals("+")) {
+            System.out.println(a + b);
+        } else if ( operator.equals("-")) {
+            System.out.println(a - b);
+        } else if (operator.equals("*")) {
+            System.out.println(a * b);
+        } else if (operator.equals("/")) {
+            System.out.println(a / b);
+        } else {
+            System.out.println("Unknown Operator");
+        }
+}
+
+
+
+import java.util.Scanner;
+
+public class Omang {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); 
+        
+        System.out.println("Enter Number: ");
+        int number = scanner.nextInt();
+
+
+        if (number == 1) {
+            System.out.println("Monday");
+        } else if (number == 2) {
+            System.out.println("Tuesday");
+        } else if (number == 3) {
+            System.out.println("Wednesday");
+        } else if (number == 4 ) {
+            System.out.println("Thursday");
+        } else if (number == 5 ) {
+            System.out.println("Friday");
+        } else if (number == 6 ) {
+            System.out.println("Saturday");
+        } else if (number == 7) {
+            System.out.println("Sunday");
+        } else {
+            System.out.println("Unknown Number");
+        } 
+    }
+}
+
+
+import java.util.Scanner;
+
+public class Omang{
+    public static void main(String[] args) {
+
+        // MAD LIBS GAME
+        Scanner scanner = new Scanner(System.in);
+
+        String adjective1;
+        String noun1;
+        String adjective2;
+        String verb1;
+        String adjective3;
+
+        System.out.print("Enter an adjective  (description): ");
+        adjective1 = scanner.nextLine();
+        System.out.print("Enter a noun  (animal or person): ");
+        noun1 = scanner.next();
+        System.out.print("Enter an adjective  (description): ");
+        adjective2 = scanner.nextLine();
+        System.out.print("Enter a verb end with -ing  (action): ");
+        verb1 = scanner.next();
+        System.out.print("Enter an adjective  (description): ");
+        adjective3 = scanner.nextLine();
+
+        System.out.println("Today I went to a " + adjective1 + " zoo.");
+        System.out.println("In an exhibit, I saw a " + noun1 + ".");  
+        System.out.println(noun1 + " was " + adjective2 + " and " + verb1 + "!");
+        System.out.println("I was " + adjective3 + "!");
+
+    
+
+        scanner.close();
+    }
+}
+
+
+
+
+
+import java.util.Scanner;
+
+public class Omang {
+  public static void main(String[] args) {
+
+    // SHOPPING CART PROGRAM
+
+    Scanner scanner = new Scanner(System.in);
+
+    String item; 
+    double price;
+    int quantity;
+    char curreny = '$'
+    double total;
+
+    System.out.print("What item would you like to buy? ");
+    item = scanner.nextLine();
+
+    System.out.print(item);
+     
+    scanner.close();
+
+  }
+}
